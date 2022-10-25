@@ -1,0 +1,35 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  height: 100%;
+  border: 1px solid var(--soc-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition-animation);
+  &:hover {
+    border-color: var(--accent-color);
+  }
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: var(--soc-color);
+
+  transition: fill var(--transition-animation);
+}
